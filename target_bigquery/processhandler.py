@@ -365,7 +365,7 @@ class LoadJobProcessHandler(BaseProcessHandler):
         # schema = build_schema(schema_simplified, key_properties=key_props, add_metadata=metadata_columns,
         #                       force_fields=force_fields)
         load_config = LoadJobConfig()
-        load_config.ignore_unknown_values = True
+        load_config.ignore_unknown_values = False
         load_config.schema = table_schema
 
         # partitioning
